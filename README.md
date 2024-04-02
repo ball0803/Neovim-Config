@@ -20,7 +20,7 @@ To use LazyVim, follow these simple steps:
 2. **Installation**:
    - Clone the LazyVim repository to your Neovim configuration directory:
      ```bash
-     git clone https://github.com/ball0803/Neovim-Config ~/.config/nvim
+     git clone https://github.com/ball0803/Neovim-Config $env:LOCALAPPDATA\nvim
      ```
 
 3. **Configuration**:
