@@ -20,3 +20,5 @@ keymap.set("n", "sv", "<cmd>vsplit<Return>")
 
 keymap.set("n", "<A-J>", "yyp")
 keymap.set("n", "<A-K>", "yyP")
+
+keymap.set("n", "U", "<cmd>UndotreeToggle<CR>")
