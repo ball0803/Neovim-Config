@@ -21,6 +21,7 @@ return {
       "tsx",
       "c_sharp",
       "typescript",
+      "go",
     },
   },
 }
