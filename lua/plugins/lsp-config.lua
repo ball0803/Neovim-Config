@@ -30,7 +30,6 @@ return {
         lazy = false,
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
-            local on_attach = require("plugins.lspconfig.lspconfig").on_attach
             local util = require("lspconfig/util")
             local lspconfig = require("lspconfig")
 
@@ -52,7 +51,6 @@ return {
             })
 
             lspconfig.gopls.setup({
-                on_attach = on_attach,
                 capabilities = capabilities,
                 cmd = { "gopls" },
                 filetypes = { "go", "gomod", "gowork", "gotmpl" },
@@ -60,7 +58,6 @@ return {
             })
 
             lspconfig.rust_analyzer.setup({
-                on_attach = on_attach,
                 capabilities = capabilities,
                 filetypes = { "rust" },
                 root_dir = util.root_pattern("Cargo.toml"),
